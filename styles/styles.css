@@ -1,8 +1,28 @@
 
-    html {
-      font-family: sans-serif;
-    }
+  
+footer {
+  position: relative;
+  bottom: 0;
+  height: 3rem;
+  text-align: center;
+}
 
+ main {
+  overflow: auto;
+  width: 100vw;
+  position: relative;
+}
+
+html, body {
+  box-sizing: border-box;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+	flex-direction: column;
+	max-width: 100%;
+  color: white;
+}
 :root {
   --main-bg-colour-blue: hsla(226, 57%, 16%);
   --main-bg-colour-yellow: rgb(181, 156, 18);
@@ -10,31 +30,38 @@
 }
 
 .backgroundImage {
-  width: 100%;
-  background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
+  width: 100vw;
+  height: 100vh;
+  object-fit: contain;
+  /* background-image: url("https://www.transparenttextures.com/patterns/stardust.png"); */
   /* background-repeat: repeat-y; */
   background-color:rgb(8, 13, 31);
-  height: 100%;
   position: absolute;
+  top: 0;
+}
 
+#starry {
+  width: 100vw;
+  height: 100vh;
 }
 
 header {
-  position: absolute;
+  position: relative;
   display: grid;
   grid-template-rows: 1fr;
   border: 1px solid rebeccapurple;
   z-index: 1;
+  color: wheat;
 }
 
 .frontPageLabel {
-  max-width: 80%;
-  position: absolute;
+  max-width: 90%;
+  position: relative;
   margin-top: auto;
   margin-right: auto;
   border: 1px solid yellow;
   margin-left: auto;
-  top: 10rem;
+  /* top: 10rem; */
   left: 0;
   right: 0;
   color: rgb(186, 167, 62);
@@ -42,3 +69,23 @@ header {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 } 
 
+.projectsContainer {
+  border: 1px solid yellow;
+  position: relative;
+  max-width: 90%;
+  margin: 0 auto;
+  display: grid;
+  /* grid-template-columns: 1fr 1fr; */
+  grid-template-areas: "header header";
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-template-rows: 1fr;
+}
+.projectImg {
+  max-width: 50%;
+  /* max-height: 100%; */
+}
+
+.projectsContainer h2 {
+  grid-area: header;
+  text-align: center;
+}
