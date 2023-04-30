@@ -1,0 +1,44 @@
+
+    html {
+      font-family: sans-serif;
+    }
+
+:root {
+  --main-bg-colour-blue: hsla(226, 57%, 16%);
+  --main-bg-colour-yellow: rgb(181, 156, 18);
+  /* --main-bg-colour-yellow:red; */
+}
+
+.backgroundImage {
+  width: 100%;
+  background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
+  /* background-repeat: repeat-y; */
+  background-color:rgb(8, 13, 31);
+  height: 100%;
+  position: absolute;
+
+}
+
+header {
+  position: absolute;
+  display: grid;
+  grid-template-rows: 1fr;
+  border: 1px solid rebeccapurple;
+  z-index: 1;
+}
+
+.frontPageLabel {
+  max-width: 80%;
+  position: absolute;
+  margin-top: auto;
+  margin-right: auto;
+  border: 1px solid yellow;
+  margin-left: auto;
+  top: 10rem;
+  left: 0;
+  right: 0;
+  color: rgb(186, 167, 62);
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+} 
+
