@@ -14,6 +14,9 @@ footer {
 }
 
 html, body {
+  background-color:rgb(8, 13, 31);
+  background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
+  background-repeat: repeat;
   box-sizing: border-box;
   height: 100%;
   margin: 0;
@@ -29,22 +32,6 @@ html, body {
   /* --main-bg-colour-yellow:red; */
 }
 
-.backgroundImage {
-  width: 100vw;
-  height: 100vh;
-  object-fit: contain;
-  /* background-image: url("https://www.transparenttextures.com/patterns/stardust.png"); */
-  /* background-repeat: repeat-y; */
-  background-color:rgb(8, 13, 31);
-  position: absolute;
-  top: 0;
-}
-
-#starry {
-  width: 100vw;
-  height: 100vh;
-}
-
 header {
   position: relative;
   display: grid;
@@ -54,14 +41,17 @@ header {
   color: wheat;
 }
 
+.firstPageContainer {
+  height: 100vh;
+}
+
 .frontPageLabel {
   max-width: 90%;
   position: relative;
   margin-top: auto;
   margin-right: auto;
-  border: 1px solid yellow;
   margin-left: auto;
-  /* top: 10rem; */
+  top: 10rem;
   left: 0;
   right: 0;
   color: rgb(186, 167, 62);
@@ -72,21 +62,45 @@ header {
 .projectsContainer {
   border: 1px solid yellow;
   position: relative;
-  max-width: 90%;
-  margin: 0 auto;
   display: grid;
   /* grid-template-columns: 1fr 1fr; */
-  grid-template-areas: "header header";
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-  grid-template-rows: 1fr;
+  grid-template-areas: "header";
+  /* grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); */
+  /* grid-template-columns: 400px; */
+  grid-template-rows: 10rem 1fr 1fr;
+  grid-auto-flow: row;
 }
-.projectImg {
-  max-width: 50%;
-  /* max-height: 100%; */
+.projectImgContainer {
+  border: 1px solid yellow;
+  width: 15rem;
+  height: 12rem;
+  overflow: hidden;
+  margin: .5rem;
 }
 
+.project {
+  margin-top: 2rem;
+}
+
+.projectImg {
+  width: 100%;
+  object-fit: contain;
+}
+
+.projectEven {
+  justify-self: right;
+}
 .projectsContainer h2 {
   grid-area: header;
   text-align: center;
-  sdflkjsdflkjsdflkjsdflkj
+  /* sdflkjsdflkjsdflkjsdflkj */
+}
+
+.project {
+  color: #2d2d2d;
+}
+
+.section {
+  max-width: 90%;
+  margin: 0 auto;
 }
